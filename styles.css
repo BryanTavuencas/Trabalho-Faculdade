@@ -264,6 +264,25 @@ td {
     font-weight: 700;
 }
 
+.promo-card button {
+    width: 90%;
+    margin: 15px auto 10px;
+    display: block;
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.promo-card button:hover {
+    background-color: #e6b800;
+    transform: translateY(-2px);
+}
+
 /* =================== SEÇÃO CONTATO =================== */
 .contato {
     padding: 80px 20px;
