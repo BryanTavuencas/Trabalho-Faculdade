@@ -1,0 +1,422 @@
+/* =========================================================
+   CARDVERSE - Loja de Cartas TCG
+   Arquivo: style.css
+   Autor: Bryan Tavuencas
+   ========================================================= */
+
+/* =================== CONFIGURAÇÕES GERAIS =================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =================== CABEÇALHO =================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242424;
+    padding: 15px 40px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Menu principal */
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #ffcc00;
+}
+
+/* =================== SEÇÃO INÍCIO =================== */
+.inicio {
+    background-image: url('./Assets/Yu-Gi-Oh!\ -\ Sky\ Striker\ Ace\ Raye.jfif');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.inicio .banner {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.inicio h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.inicio p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffd633;
+}
+
+/* =================== SEÇÃO COLEÇÃO =================== */
+.colecao {
+    padding: 80px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.colecao h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.colecao p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Grid de cards */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.card {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.card p {
+    color: #666;
+}
+
+.card button {
+    margin-top: 10px;
+    background-color: #ffcc00;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.card button:hover {
+    background-color: #e6b800;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+/* =================== TABELA DE ESTOQUE =================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #ffcc00;
+    color: #000;
+    font-weight: 700;
+}
+
+td {
+    background-color: #fff;
+}
+
+/* =================== SEÇÃO PROMOÇÕES =================== */
+.promocoes {
+    padding: 80px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.promocoes h2 {
+    font-size: 30px;
+    color: #222;
+}
+
+.promocoes p {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.promos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.promo-card {
+    position: relative;
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.promo-card:hover {
+    transform: scale(1.05);
+}
+
+.promo-card img {
+    width: 100%;
+}
+
+.desconto {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff0000;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.preco-novo {
+    color: #28a745;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* =================== SEÇÃO CONTATO =================== */
+.contato {
+    padding: 80px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.form-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #fafafa;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.form-contato label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-family: inherit;
+}
+
+.form-contato button {
+    margin-top: 20px;
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.form-contato button:hover {
+    background-color: #e6b800;
+}
+
+/* Redes sociais */
+.redes-sociais {
+    margin-top: 30px;
+}
+
+.redes-sociais a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: #ffcc00;
+}
+
+/* =================== RODAPÉ =================== */
+footer {
+    background-color: #242424;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+footer strong {
+    color: #ffcc00;
+}
+
+/* =================== BOTÃO VOLTAR AO TOPO =================== */
+.btn-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    background: #ffcc00;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-topo:hover {
+    background: #e6b800;
+    transform: translateY(-3px);
+}
+
+/* =================== RESPONSIVIDADE =================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .inicio h2 {
+        font-size: 30px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .promos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-contato {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .inicio h2 {
+        font-size: 24px;
+    }
+
+    .inicio p {
+        font-size: 14px;
+    }
+
+    .menu {
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- ================= META E CONFIGURAÇÕES ================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardVerse - Loja de Cartas TCG</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonte do Google e ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2d9d6f64b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ================= CABEÇALHO ================= -->
+    <header>
+        <div class="logo">
+            <!-- Logotipo simples -->
+            <img src="./Assets/Spades Computer Icons Symbol PNG.jfif" alt="Logo CardVerse">
+            <h1>CardVerse</h1>
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#colecao">Coleção</a></li>
+                <li><a href="#promocoes">Promoções</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= SEÇÃO INÍCIO ================= -->
+    <section id="inicio" class="inicio">
+        <div class="banner">
+            <!-- Texto principal da página -->
+            <h2>Bem-vindo à CardVerse</h2>
+            <p>A melhor loja online de cartas TCG e colecionáveis do Brasil.</p>
+            <a href="#colecao" class="btn">Ver Coleção</a>
+        </div>
+    </section>
+
+    <!-- ================= SEÇÃO COLEÇÃO ================= -->
+    <section id="colecao" class="colecao">
+        <h2>Nossa Coleção</h2>
+        <p>Confira algumas das cartas mais populares entre nossos duelistas!</p>
+
+        <!-- Container de cards de produtos -->
+        <div class="cards-container">
+            <!-- Cada card representa uma carta -->
+            <div class="card">
+                <img src="./Assets/Dragão branco de olhos azuis.jfif" alt="Blue Eyes">
+                <h3>Dragão Branco de Olhos Azuis</h3>
+                <p>R$ 19,90</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="./Assets/Slifer.jfif" alt="Slifer">
+                <h3>Slifer</h3>
+                <p>R$ 24,90</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="./Assets/Alexander.jfif" alt="Alexander">
+                <h3>Alexander</h3>
+                <p>R$ 29,90</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="./Assets/Sky striker.jfif" alt="Sky Striker Raye">
+                <h3>Sky Striker Raye</h3>
+                <p>R$ 17,90</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <!-- Tabela de estoque -->
+        <h3>Estoque Atual</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th>Raridade</th>
+                    <th>Preço</th>
+                    <th>Disponibilidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dragão Branco de Olhos Azuis</td>
+                    <td>Luz</td>
+                    <td>Rara</td>
+                    <td>R$ 19,90</td>
+                    <td>Em estoque</td>
+                </tr>
+                <tr>
+                    <td>Slifer</td>
+                    <td>Divino</td>
+                    <td>Super Rara</td>
+                    <td>R$ 24,90</td>
+                    <td>Em estoque</td>
+                </tr>
+                <tr>
+                    <td>Alexander</td>
+                    <td>Vento</td>
+                    <td>Ultra Rara</td>
+                    <td>R$ 29,90</td>
+                    <td>Últimas unidades</td>
+                </tr>
+                <tr>
+                    <td>Sky Striker Raeye</td>
+                    <td>Sombrio</td>
+                    <td>Comum</td>
+                    <td>R$ 17,90</td>
+                    <td>Em estoque</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ================= SEÇÃO PROMOÇÕES ================= -->
+    <section id="promocoes" class="promocoes">
+        <h2>Promoções da Semana</h2>
+        <p>Aproveite os melhores descontos antes que acabem!</p>
+
+        <div class="promos-container">
+            <div class="promo-card">
+                <span class="desconto">-30%</span>
+                <img src="./Assets/Sky Striker Ace - Kagari (1).jfif" alt="Promoção 1">
+                <h3>Ace Kagari</h3>
+                <p class="preco-antigo">R$ 25,00</p>
+                <p class="preco-novo">R$ 17,50</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="promo-card">
+                <span class="desconto">-20%</span>
+                <img src="./Assets/Ace Kaina.jfif" alt="Promoção 2">
+                <h3>Ace Kaina</h3>
+                <p class="preco-antigo">R$ 30,00</p>
+                <p class="preco-novo">R$ 24,00</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="promo-card">
+                <span class="desconto">-50%</span>
+                <img src="./Assets/Sky Striker Ace - Azalea.jfif" alt="Promoção 3">
+                <h3>Ace Azalea</h3>
+                <p class="preco-antigo">R$ 40,00</p>
+                <p class="preco-novo">R$ 20,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SEÇÃO CONTATO ================= -->
+    <section id="contato" class="contato">
+        <h2>Entre em Contato</h2>
+        <p>Tem dúvidas, sugestões ou quer nos enviar uma mensagem? Preencha o formulário abaixo:</p>
+
+        <!-- Formulário -->
+        <form action="#" method="post" class="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Redes sociais -->
+        <div class="redes-sociais">
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+    </section>
+
+    <!-- ================= RODAPÉ ================= -->
+    <footer>
+        <p>&copy; 2025 CardVerse - Todos os direitos reservados.</p>
+        <p>Desenvolvido por <strong>Bryan, João, Julião e Lucas</strong></p>
+    </footer>
+
+    <!-- ================= VOLTAR AO TOPO ================= -->
+    <a href="#inicio" class="btn-topo">↑</a>
+
+</body>
+</html>
